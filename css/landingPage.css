@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-bar{
+    padding: 20px;
+    margin: 8px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    min-height: 30px;
+    width: 100%;
+    
+}
+
+.nav-bar-items{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin-left: 12%;
+}
+
+.nav-bar-items li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+
+}
+.nav-bar-items li:hover{
+    font-size: 17px;
+    
+}
+.nav-bar-items li a:link , .nav-bar-items li a:visited{
+    text-decoration: none;
+    color: #000000;
+}
+.search-bar{
+    background:#EB5757 ;
+    width: 278px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.search-bar i{
+    display: flex;
+    position: absolute;
+    top:24%;
+    left: 3%;
+    align-items: flex-start;
+    z-index: 1;
+}
+.fa-lg{
+    color: #FFFFFF;
+}
+.search{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-size: 14px;
+    font-style: "Poppins";
+    border: none;
+    color: #FFFFFF;
+    font-style: normal;
+    background: transparent;
+    border:none;
+
+}
+
+input.search:focus{
+    outline:none;
+}
+
+img.vector{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.branding-sentence{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    top: 37%;
+    left: 5%;
+    z-index: 2;
+}
+
+.branding-sentence h1{
+    text-transform: uppercase;
+    font-family: "Poppins";
+    
+    font-style: ;
+    font-weight: bold;
+    font-size: 85px;
+    line-height: 136.9%;
+    color: #FFFFFF;
+}
+.branding-sentence h2{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 136.9%;
+    color: #FFFFFF;
+    
+}
+
+/* *************************************** */
+
+.palette{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    min-height: 80px;
+    width: 33rem;
+    border-radius:30px ;
+    box-shadow: 0 20px 20px rgb(0, 0, 0, .2), 0px 0px 50px rgb(0, 0, 0, .2)
+}
+.picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 12px;
+    position: relative;
+    margin-top: 10%;
+}
+.card .vector-top{
+    position: absolute;
+}
+.card .vector-bottom{
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    transform: scale(-1,-1);
+    
+}
+.picture img{
+    z-index: 2;
+}
+.picture .circle {
+    z-index: 1;
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right,
+        rgba(248,213,105,0.76),
+        rgba(235,87,87,0.76)
+    );
+    border-radius: 50%;
+}
+
+
+.brand{
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+}
+.container_card .title{
+    font-family: "Poppins",sans-serif ;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.taille{
+    margin-top: 10%;
+    display: flex;
+    justify-content: flex-start;
+}
+.title h4{
+    width: 67%;
+    text-transform: uppercase;
+    color: rgb(165, 162, 162);
+}
+.taille li{
+    display: inline;
+    list-style: none;
+    border: none;
+    margin-right: 12px;
+    padding: 7px 40px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, .2);
+}
+
+.taille li:hover{
+    background-color: #F86D20;
+}
+.purshase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+.purshase button{
+    border: none;
+    cursor: pointer;
+    width: 75%;
+    height: 50px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    font-family: "Poppins",sans-serif ;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, .2);
+    background-color:rgb(238, 62, 49);
+}
+.purshase button:focus{
+    outline: none;
+}
+.purshase button:hover{
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, .3);
+
+}
