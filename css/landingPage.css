@@ -85,16 +85,28 @@ input.search:focus{
     outline:none;
 }
 
+
+.manequin {
+    display: flex;
+    position: absolute;
+}
 img.vector{
     width: 100%;
     position: relative;
     z-index: 1;
 }
 
+img.model{
+    position: absolute;
+    top:49%;
+    right: 0%;
+}
+
 .branding-sentence{
     position: absolute;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 40%;
     top: 37%;
     left: 5%;
@@ -104,8 +116,6 @@ img.vector{
 .branding-sentence h1{
     text-transform: uppercase;
     font-family: "Poppins";
-    
-    font-style: ;
     font-weight: bold;
     font-size: 85px;
     line-height: 136.9%;
@@ -220,8 +230,8 @@ img.vector{
     cursor: pointer;
     width: 75%;
     height: 50px;
-    font-size: 15px;
-    color: black;
+    font-size: 17px;
+    color: #FFFF;
     font-weight: bold;
     font-family: "Poppins",sans-serif ;
     padding: 10px;
